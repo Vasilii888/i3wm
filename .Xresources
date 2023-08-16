@@ -1,0 +1,17 @@
+XTerm.termName: xterm-256color
+XTerm.vt100.metaSendsEscape: true
+XTerm.vt100.backarrowKey: false
+XTerm.ttyModes: erase ^?
+
+XTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
+xterm*translations: #override \
+	Ctrl <KeyPress> C: copy-selection(PRIMARY, CLIPBOARD, CUT_BUFFER0) \n\
+	Ctrl <KeyPress> V: insert-selection(PRIMARY, CLIPBOARD, CUT_BUFFER0)
+xterm*scrollBar:        false
+!xterm*rightScrollBar:	true
+xterm*VT100.geometry:	80x40	
+xterm*saveLines:	512	
+xterm*faceName: 	IBM Plex Mono:size=12	
+xterm*background:	gray15	
+xterm*foreground:	gray90	
+
